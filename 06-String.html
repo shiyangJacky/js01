@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>字符串</title>
+</head>
+<body>
+  <script>
+    // 字符串就是用双引号或单引号引起来的字符序列
+    // 比如 '黑马程序员' '123' "itcast"
+
+    var itheima = "黑马程序员";
+    var num = '123';
+    var itcast = "itcast";
+ 
+
+    // 打印出  我是一匹'黑马';
+    // 打印出  有人叫马云"爸爸";
+
+    console.log('我是一匹\'黑马\'');
+    console.log("有人叫马云\"爸爸\"");
+    console.log('有人叫马云\n"爸爸"');
+    console.log('有人叫马云\t"爸爸"');
+    console.log('有人叫马云\b"爸爸"');
+    // 获取字符串的长度 
+    // str.length (length 长度)
+    console.log(itcast.length); // 6
+    console.log(itheima.length);// 5   有可能是10 
+
+
+    // 拼接字符串
+  
+    // 请打出 孙悟空和紫霞仙子
+    var sMonkey = "孙悟空";
+    var sZiXia = "紫霞仙子";
+
+    //  在js种我们使用 加号 '+'拼接字符串
+    console.log(sMonkey + "和" + sZiXia);
+
+
+    // 规律: 除非加号两边都是数字 才是算术运算 否则都是字符串拼接
+
+    // var s1 = '123';
+    // var s2 = '1';
+    var s1 = 123;
+    var s2 = 1;
+    console.log(s1+s2);
+
+
+  </script>
+</body>
+</html>

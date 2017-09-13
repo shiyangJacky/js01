@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>数据类型转换</title>
+  <script>
+    var age = 18;
+    var name = 'zs';
+    var isRight = true;
+    var a;
+    var b = null;
+
+    // 输出变量的值(每种类型的值在控制台中的颜色)
+    // console.log(age); // Number类型 蓝色
+    // console.log(name);// String类型  黑色
+    // console.log(isRight);// Boolean类型 深蓝色
+    // console.log(a);//Undefined类型  灰色
+    // console.log(b);//Null类型  灰色
+
+
+
+    // 转换成字符串
+
+      // toString()方法
+      // var stringNum = age.toString(); // '18'
+      // console.log(typeof stringNum);// string
+      // console.log(name.toString()); // 'zs'
+      // console.log(isRight.toString());//'true';
+      // // undefined和null 没有toString()方法
+      // console.log(a.toString());
+      // console.log(b.toString());
+
+
+      // String()方法
+    console.log(typeof String(age)); // Number类型 蓝色
+    console.log(String(name));// String类型  黑色
+    console.log(String(isRight));// Boolean类型 深蓝色
+
+
+    console.log(typeof String(a));//Undefined类型  灰色
+    console.log(typeof String(b));//Null类型  灰色
+
+    
+
+
+
+   
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

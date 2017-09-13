@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>数据类型介绍</title>
+</head>
+<body>
+  <script>
+    // 5种简单类型: String(字符串) Number(数字) Boolean(布尔) Undefined(未定义) Null(空)
+    // 1种复杂类型: Object(对象)
+
+    // String(字符串)数据类型
+    // 我们把用双引号或单引号引起来的字符序列
+    // var sName = "tongliya";
+    // var sMessage = 'Hello,World!!';
+
+    // var numE = '123';
+
+    // Number(数字)数据类型
+    // 按照精度分类(是否有小数)
+      // 整数
+      var iScore = 90;
+      // 小数
+      var flWeight = 0.9;
+
+
+    // 按照进制分类
+      // 十进制 数字由0-9十个基数构成
+      var numA = 9;
+      // 十六进制  数字由0-9及a-f一共16个基数构成的 必须以0x开头的才是
+      //  a(10) b(11) c(12) d(13) e(14) f(15);
+      // 在这 如果你定义的是16进制 输出会变成10进制
+      var numB = 0xff;
+      // rgb(255,255,255) 白色
+      // console.log(numB);
+      
+      // 八进制 数字由0-7这8个基数构成的  必须以0开头的才是8进制
+      var numC = 010;
+
+      var numD = 080;
+      console.log(numC);
+      // 如果我们定义的值大于了进制的表示的数字  会忽略前面的0 按照10进制进行表示
+      console.log(numD);
+
+    // Boolean(布尔)数据类型
+    // 一般把真假 是否这样的数据定义成布尔值  布尔值只有两个 true(真) false(假)
+
+    // var married = false;
+    // console.log(married);
+
+    // Undefiend(未定义)数据类型
+    //  当定义了变量没有赋值 就会出现Undefined数据类型
+    // var numF;
+    // console.log(numF);
+
+    // Null(空或空对象指针) 
+    // 你定义一个对象 如果这个对象想做初始化或者对象未初始化就是null
+    // var obj = null;
+    // console.log(obj);//null
+
+
+
+    // 比如null和Null 由什么区别
+    // null是Null数据类型的值
+    // 大写代表数据类型 小写代表值
+  </script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+w4<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script>
+    //  注释
+
+    // 在javascript中  单行注释 用两个斜杠 //
+
+    // 单行注释 只在本行起作用
+
+    //   在javascript中 多行注释  /**/
+    /*
+    多行注释
+    多行注释
+    */
+
+    /*
+     *  功能: 
+     *  思路:
+     *  多行注释一般用在对象和函数这些地方
+     *  是多行注释
+     */
+
+
+    // 数字:
+    // 在js中能表示的数字是有限的 
+    // js中有一个最大值 和最小值
+    // 最大值 : Number.MAX_VALUE  常量  1.7976931348623157e+308 (这是科学记数法  e代表底数10)
+    // 最小值: Number.MIN_VALUE   常量  5e-324                   (这也是科学计数法,e代表底数10)
+
+    // console.log(Number.MAX_VALUE);
+    // console.log(Number.MIN_VALUE);
+
+    // 0.1+0.2 等于0.3吗?  应该返回true 却返回false;
+    // console.log(0.1+0.2);0.30000000000000004
+    // console.log(0.1+0.2 == 0.3);
+    // 警告: 不要去判断浮点数相等
+
+    // console.log(1+2 == 3);
+
+
+
+
+    // 把其他类型的数据变成数字类型
+    // var strA = '123abc4';
+    // var flag = true;
+    // var flagF = false;
+    // var strB = 'abc123';
+    // var strC = '123.5';
+    // 1 Number()
+
+    // 如果字符串不能转成数字 那么就返回NaN
+    // console.log(Number(strA));// NaN
+
+    // 1.NaN从颜色上来看 是数字
+    // 其实NaN确实是一个数字,但是是一个特殊的数字
+    // NaN: not a number(不是一个数字)
+    // isNaN() 判断变量是不是一个数字  如果返回是true, 如果是一个数字返回false
+    // console.log(isNaN(strA));// true;
+    // console.log(isNaN(3)); //false;
+
+
+    // console.log(Number(flag));// 1
+    // console.log(Number(flagF));
+    // console.log(Number(strC));//123
+    // console.log(Number(strB));
+
+    // Number()方法如果字符串中带有非数字的字符,不能转成数字
+    // Number()方法可以把布尔值变成数字(true 变成1  false变成0)
+
+     // 2 parseInt()  只能转换成整数
+
+    //  console.log(parseInt(strA));//123
+    //  console.log(parseInt(strB));//NaN
+    //  console.log(parseInt(strC));//123
+    // console.log(parseInt(flag));// parseInt和parseFloat不能把布尔变量变成数字
+    //  从以上现象说明 parseInt方法在第一次看到数字的时候开始转换 到碰到第一个非数字就停止 然后返回值
+
+     // 3 parseFloat() 转换成浮点数
+
+    //  console.log(parseFloat(strA));//123
+    //  console.log(parseFloat(strB));//NaN
+    //  console.log(parseFloat(strC));//123.5
+    // console.log(parseFloat(flag));
+
+    // 通过以上现象说明 parsetInt和parseFloat没有任何区别  只在于parsetInt只能转换出整数,而parseFloat可以转换出小数
+     //  parseInt和parseFloat不能把布尔变量变成数字
+     // 4 取正或者取负   + -
+
+    //  var num =-5;
+    //  console.log(num);
+
+    // var num1 = '30';
+    // var num2 = 20;
+    // console.log(num1 - num2);
+    // 如果是减号 那么会自动发生转换 把非数字尝试转换成数字 然后进行算术运算
+
+    // var num1 = 'abc';
+    // var num2 = 20;
+    // console.log(num1-num2); // 总的值就是NaN;
+
+    // console.log(NaN == NaN);// false
+    // 规定: NaN是一个数字只是比较特殊  它和任何值都不想等  包括自己
+
+
+    // var num1 = 20;
+    // var num2 = '10';
+    // console.log(num1+num2);// 2010
+    // // 如果加号两边其中任何一边不是数字 那么就是拼接
+
+    // console.log(num1 + Number(num2));//30
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
